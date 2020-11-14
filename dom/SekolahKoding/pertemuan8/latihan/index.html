@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Latihan</title>
+  <style>
+    .background {
+      background-color: blue;
+    }
+    .height {
+      height: 150px;
+    }
+  </style>
+  <script>
+    
+    window.onload = function()
+    {
+      let v3 = '';
+
+      const input = document.getElementById('input');
+      const input2 = document.getElementById('input2');
+      const input3 = document.getElementById('input3');
+      const h1 = document.getElementById('h1');
+
+      input.addEventListener('keyup', () => 
+      {
+        const v = input.value;
+        h1.style.color = v;
+      })
+
+      input2.addEventListener('keyup', () => {
+        const v2 = input2.value;
+        h1.style.fontSize = v2 + 'px';
+      })
+
+      input3.addEventListener('keyup', () => {
+        v3 = input3.value;
+        // h1.innerHTML += ' ' + v3;
+      })
+      console.log(v3);
+
+    }
+    
+
+  </script>
+</head>
+<body>
+  
+  <h1 id="h1">Hello World</h1>
+  <input type="text" id="input"/>
+  <input type="text" id="input2"/>
+  <input type="text" id="input3"/>
+
+  
+</body>
+</html>

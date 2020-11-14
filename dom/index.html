@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .padding {
+      padding: 10px 5px 10px 20px;
+    }
+
+    .blue {
+      background-color: lightblue;
+    }
+  </style>
+</head>
+<body>
+  
+  <main id="main">
+    <h1>Hello World</h1>
+    <h2 id='dom'>DOM</h2>
+    <p class="text">Review Materi DOM</p>
+    <a href="#" href="https://youtube.com">Youtube</a>
+    <a href="#" href="https://facebook.com">Facebook</a>
+    <a href="#" href="https://twitter.com">Twitter</a>
+
+    <aside>
+      <a href="https://sekolahkoding.com">Sekolah Koding</a>
+    </aside>
+  </main>
+
+  <script>
+
+    const main = document.getElementById('main');
+    main.style.border = '5px solid gray';
+    main.className = 'padding';
+
+    const h1 = document.getElementsByTagName('h1');
+    h1[0].style.color = 'red';
+
+    const p = document.getElementsByClassName('text');
+    p[0].style.fontSize = '19px';
+    p[0].innerHTML = 'Belajar DOM';
+
+    const a = document.querySelectorAll('main#main > a');
+    for(let i = 0; i < a.length; i++)
+    { 
+      a[i].style.display = 'block';
+      a[i].style.color = 'black'
+    }
+
+    const yt = document.querySelector('main#main > a');
+    yt.style.textDecoration = 'line-through'
+
+    const h2 = document.getElementById('dom');
+    h2.style.textDecoration = 'underline';
+    h2.setAttribute('class','blue');
+    h2.removeAttribute('class');
+    h2.setAttribute('class','blue');
+    h2.classList.add('a');
+    console.log(h2.getAttribute('class'));
+
+    console.log(h2.classList.contains('blue'));
+    console.log(h2.classList.item(1));
+    h2.classList.replace('a','z');
+    h2.classList.toggle('blue');
+    h2.classList.remove('z');
+
+    const hOne = document.createElement('h1');
+    const txt = document.createTextNode('Mina-san Konnichiwa');
+    hOne.appendChild(txt);
+
+    main.appendChild(hOne);
+    // main.insertBefore(hOne, a[1]);
+
+    main.removeChild(h2);
+
+    const el = document.createElement('a');
+    const text = document.createTextNode('nodejs');
+    el.appendChild(text);
+    el.setAttribute('href','https://nodejs.org');
+    el.setAttribute('target',"_blank");
+    main.replaceChild(el, h1[0]);
+
+    const aside = document.querySelector('main#main aside');
+    const link = aside.querySelector('a');
+    link.style.textDecoration = 'none';
+  </script>
+</body>
+</html>

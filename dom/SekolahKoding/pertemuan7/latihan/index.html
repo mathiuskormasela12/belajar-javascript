@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Latihan</title>
+  <style>
+    .background {
+      background-color: blue;
+    }
+    .height {
+      height: 150px;
+    }
+  </style>
+</head>
+<body>
+  
+  <input type="text" id="input" class="background"/>
+  <button type="button" onclick="changeType()">Change Type</button>
+  <button type="button" onclick="changeBackground()">Change Background</button>
+  <button type="button" onclick="addClass()">Add Class</button>
+
+  <script>
+    
+    const input = document.getElementById('input');
+    const changeType = () => 
+    {
+      input.type = 'password';
+    }
+
+    const changeBackground = () =>
+    {
+      input.style.backgroundColor = 'blue';
+    }
+
+    const addClass = () =>
+    {
+      input.className += ' height';
+    }
+
+  </script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Latihan</title>
+</head>
+<body>
+  
+  <div id="box">
+    <p>Hello JavaScript</p>
+  </div>
+
+  <script>
+    const box = document.getElementById('box');
+    const p = document.getElementsByTagName('p')[0];
+
+    // menghapus elemen
+    box.removeChild(p);
+
+    // menambah elemen
+    const h1 = document.createElement('h1');
+    const text = document.createTextNode('Selamat Datang di SekolahKoding');
+    h1.appendChild(text);
+    box.appendChild(h1);
+
+    // mengubah element
+    const lama = document.getElementsByTagName('h1')[0];
+    const baru = document.createElement('p');
+    const txt = document.createTextNode('hello world');
+    baru.appendChild(txt);
+    box.replaceChild(baru, lama);
+  </script>
+</body>
+</html>

@@ -1,0 +1,1 @@
+console.log("Menulis Javascript secara external");

@@ -1,0 +1,31 @@
+[
+	{
+		"nama": "Mathius",
+		"ttl": "Jakarta, 04 Oktober 2002",
+		"jurusan": "Computer"
+	},
+
+	{
+		"nama": "Rizki Ramadhan",
+		"ttl": "Jakarta, 26 November 2002",
+		"jurusan": "Computer"
+	},
+
+	{
+		"nama": "Fadhli Fadhilah",
+		"ttl": "Jakarta, 21 Februari 2002",
+		"jurusan": "Game Development"
+	},
+
+	{
+		"nama": "Reza Safputra",
+		"ttl": "Jakarta, 05 Juni 2002",
+		"jurusan": "Law"
+	},
+	
+	{
+		"nama": "Fahdil Rabbani",
+		"ttl": "Jakarta, 12 Agustus 2002",
+		"jurusan": "Japanese Studies"
+	}
+]
