@@ -120,6 +120,7 @@ const cuaca = new Promise((resolve, reject) =>
 // 	.then(response => console.log(response))
 // 	.catch(response => console.log(response));
 
+// pada Promise.all yg akan dieksekusi jika menggunakan setTimeout yaitu promise yg dituls pertama kali yaitu pada line 73 yaitu promise movie
 // Promise.all([movie, cuaca])
 // 	.then(response => {
 // 		let [movie, wheater] = response;
