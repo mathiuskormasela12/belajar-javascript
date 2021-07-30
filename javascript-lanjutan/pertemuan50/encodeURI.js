@@ -1,10 +1,16 @@
 /* 
   ===== Belajar Fungsi encodeURI =====
 
+  1. Pengertian Petama
   Fungsi encodeURI berfungsi untuk menyandikan
   atau menghilangkan karakter-karakter khusus 
   kecuali tanda (:/,$#@=+&?) dalam string sehingga 
   bisa menjadi URL yg friendly.
+
+  2. Pengertian Kedua
+  encodeURI berfungsi untuk mengeliminasi karakter-karakter
+  khusus kecuali tanda (:/,$#@=+&?) pada sebuah string URL sehingga bisa
+  menjadi URL yg friendly.
 
   rumus :
   encodeURI( URI );
